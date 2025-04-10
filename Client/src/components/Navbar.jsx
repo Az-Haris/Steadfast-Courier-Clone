@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "./Logo";
 import { Link, NavLink } from "react-router";
 import { assets } from "../assets/assets";
@@ -8,13 +8,27 @@ import { RxCross1 } from "react-icons/rx";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 60);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <div className="py-2 md:py-4 shadow-md backdrop-blur-lg">
-      <div className="max-w-7xl mx-auto px-4 flex flex-wrap gap-3 justify-between items-center text-center">
+    <div className={`py-3 md:py-4 w-full z-20 fixed transition-all duration-500 ease-in-out transform ${
+      isSticky ? "top-0 backdrop-blur-xl shadow-md opacity-100" : "-top-20 fixed opacity-100 translate-y-20"
+    }`}
+>
+      <div className="max-w-screen-xl mx-auto px-4 flex flex-wrap gap-3 justify-between items-center text-center">
         <div className="flex items-center gap-3">
           <IoIosMenu
             onClick={() => setVisible(true)}
-            className="lg:hidden text-3xl md:text-4xl border p-0.5 rounded-sm border-gray-300"
+            className="lg:hidden text-3xl md:text-4xl p-0.5 shadow-sm cursor-pointer"
           />
           <Logo />
         </div>
@@ -66,7 +80,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between shadow-md pb-3 mb-5 px-4">
             <Logo></Logo>
             <button onClick={() => setVisible(false)}>
-              <RxCross1 className="text-3xl text-red-500 border p-0.5 rounded-sm border-gray-300 cursor-pointer" />
+              <RxCross1 className="text-3xl text-red-500 shadow-sm p-0.5 cursor-pointer" />
             </button>
           </div>
           <Link
