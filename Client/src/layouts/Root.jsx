@@ -5,11 +5,11 @@ import Breadcrumbs from '../components/Breadcrumbs';
 
 const Root = () => {
     return (
-        <div>
+        <>
             <Navbar/>
             <Breadcrumbs/>
             <Outlet></Outlet>
-        </div>
+        </>
     );
 };
 

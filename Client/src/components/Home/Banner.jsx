@@ -20,7 +20,7 @@ const Banner = () => {
         <div>
           <img src={assets.rider} alt="" />
         </div>
-        <div className="flex flex-col gap-8 pt-20">
+        <div className="flex flex-col gap-8 pt-20 w-56">
           <div className="flex items-center gap-4">
             <img
               className="border-2 p-3 rounded-sm border-white bg-white/40"
@@ -29,7 +29,7 @@ const Banner = () => {
             />
             <div>
               <h3 className="text-3xl font-semibold">300k+</h3>
-              <small className="text-sm text-neutral-400">Registered Merchant</small>
+              <p className="text-sm text-neutral-400">Registered Merchant</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
