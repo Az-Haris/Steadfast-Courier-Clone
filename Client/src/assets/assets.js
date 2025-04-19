@@ -24,10 +24,17 @@ import payment from './features/payment.svg'
 import management from './features/management.svg'
 import tracking from './features/realtime_track.svg'
 import support from './features/24_4_support.svg'
+import apple_store from './app_store.png'
+import play_store from './google_play.png'
+import tik_mark from './tik_mark.png'
+import about_img from './about_img.svg'
+import mission from './mission.svg'
+import vision from './vision.svg'
 
 export const assets = {
     parcel_track_icon, intro_bg, rider, sm_merchant, sm_rider, sm_hub,
     fashion, htbazar, lotto, naturo01, othoba, rokomari, sailor, sm_ghor, sm_halal_food, sm_online,
     delivery, packaging, pickndrop, warehouse,
     daily_pickup, cod, payment, management, tracking, support,
+    apple_store, play_store, tik_mark, about_img, mission, vision, 
 }

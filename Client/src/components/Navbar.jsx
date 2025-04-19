@@ -21,7 +21,7 @@ const Navbar = () => {
   }, []);
   return (
     <div className={`py-3 md:py-4 w-full z-20 fixed transition-all duration-500 ease-in-out transform ${
-      isSticky ? "top-0 backdrop-blur-2xl shadow-md opacity-100" : "-top-20 fixed opacity-100 translate-y-20"
+      isSticky ? "top-0 bg-white/50 backdrop-blur-2xl shadow-md opacity-100" : "-top-20 fixed opacity-100 translate-y-20"
     }`}
 >
       <div className="max-w-screen-xl mx-auto px-4 flex flex-wrap gap-3 justify-between items-center text-center">

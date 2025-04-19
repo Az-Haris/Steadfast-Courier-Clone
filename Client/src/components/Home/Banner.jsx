@@ -9,18 +9,18 @@ const Banner = () => {
       style={{ backgroundImage: `url(${assets.intro_bg})` }}
       className="bg-no-repeat bg-cover bg-top pt-24"
     >
-      <Container className="flex flex-col md:flex-row gap-10 justify-between">
+      <Container className="flex flex-col md:flex-row gap-10 md:gap-5 justify-between">
         <div className="md:pt-20 space-y-7 sm:space-y-10 text-center sm:text-left">
-            <h1 className="text-3xl sm:text-5xl font-bold text-[#212529] leading-12 sm:leading-15">We Deliver <br /> Parcel on Time with <br /> no Hassle</h1>
+            <h1 className="text-3xl sm:text-[44px] font-bold text-[#212529] leading-12 sm:leading-15">We Deliver <br /> Parcel on Time with <br /> no Hassle</h1>
           <p>Easy Tracking, fast Payment, and safe Delivery across country.</p>
           <Button size="lg" to={"/register"}>
             Become a Merchant
           </Button>
         </div>
-        <div>
+        <div >
           <img src={assets.rider} alt="" />
         </div>
-        <div className="hidden lg:flex flex-col gap-8 pt-20 w-56">
+        <div className="hidden lg:flex flex-col gap-8 pt-20 ">
           <div className="flex items-center gap-4">
             <img
               className="border-2 p-3 rounded-sm border-white bg-white/40"

@@ -9,7 +9,6 @@ const Root = () => {
     return (
         <>
             <Navbar/>
-            <Breadcrumbs/>
             <Outlet></Outlet>
             <Footer/>
             <GoToTop/>

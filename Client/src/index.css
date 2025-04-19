@@ -12,7 +12,7 @@ body {
 }
 
 .link{
-  @apply hover:text-primary transition duration-200 ease-in-out text-[16px]
+  @apply hover:text-primary transition duration-200 ease-in-out text-[16px] font-medium
 }
 .hoverEffect{
   @apply hover:text-primary transition duration-200 ease-in-out;
