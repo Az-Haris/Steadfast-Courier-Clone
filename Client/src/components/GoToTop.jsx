@@ -27,7 +27,7 @@ const GoToTop = () => {
   }, []);
 
   return (
-    <div className={`fixed right-5 transition-all duration-500 ease-in-out ${visible ? "bottom-5" : "-bottom-10 opacity-0"}`}>
+    <div className={`fixed right-5 transition-all duration-500 ease-in-out z-50 ${visible ? "bottom-5" : "-bottom-10 opacity-0"}`}>
       
         <Button
           className="!p-3 sm:p-4"

@@ -1,31 +1,19 @@
 import React from 'react';
-import Container from '../components/Container';
 import Banner from '../components/Home/Banner';
-import GoToTop from '../components/GoToTop';
+import Partners from '../components/Home/Partners';
+import Services from '../components/Home/Services';
+import WhyChoose from '../components/Home/WhyChoose';
+import Faq from '../components/Home/Faq';
 
 const Home = () => {
     return (
         <div>
             <Banner/>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <h1 className='text-9xl'>abcd</h1>
-            <GoToTop/>
+            <Partners/>
+            <Services/>
+            <WhyChoose/>
+            <Faq/>
+            <WhyChoose/>
         </div>
     );
 };
