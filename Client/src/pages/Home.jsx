@@ -4,6 +4,7 @@ import Partners from '../components/Home/Partners';
 import Services from '../components/Home/Services';
 import WhyChoose from '../components/Home/WhyChoose';
 import Faq from '../components/Home/Faq';
+import CallToAction from '../components/Home/CallToAction';
 
 const Home = () => {
     return (
@@ -13,7 +14,7 @@ const Home = () => {
             <Services/>
             <WhyChoose/>
             <Faq/>
-            <WhyChoose/>
+            <CallToAction/>
         </div>
     );
 };
